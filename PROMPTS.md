@@ -1,0 +1,1 @@
+Give me some idea for, some thing missing?  generate a relevant section with ai,This tool will make my portfolio look good and professional
