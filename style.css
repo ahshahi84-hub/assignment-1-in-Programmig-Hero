@@ -1,46 +1,86 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
   background-color: #ffffff;
 }
-ul{
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
   list-style: none;
 }
-img{
+
+img {
   max-width: 100%;
   display: block;
 }
-
-.btn{
+.btn {
   display: inline-block;
   padding: 12px 24px;
- border-radius: 6px;
- font-size:15px;
- border:none;
- background-color: #2f5fff;
- color:#ffffff;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
 }
-.secton-title{
-  font-size:  center;
-  font-weight: 32px;
+
+.btn-blue {
+  background-color: #2f5fff;
+  color: #ffffff;
+}
+
+.btn-blue:hover {
+  background-color: #1e3fcc;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  color: #111111;
+}
+
+.btn-outline:hover {
+  border-color: #2f5fff;
+  color: #2f5fff;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+  color: #0d1117;
+  margin-top: 20px;
+}
+
+.btn-green:hover {
+  background-color: #27ae60;
+}
+.section-title {
+  text-align: center;
+  font-size: 32px;
   margin-bottom: 10px;
 }
+
 .section-subtitle {
   text-align: center;
   color: #666666;
   margin-bottom: 40px;
 }
-.navbar{
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-between;
+  padding: 18px 40px;
+  border-bottom: 1px solid #eeeeee;
 }
+
 .logo img {
   height: 32px;
 }
@@ -58,4 +98,31 @@ img{
 .nav-links a:hover {
   color: #2f5fff;
 }
+.hero {
+  background-image: url("./B14-A01-DevConf-2026/assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
+.hero-overlay {
+  background-color: rgba(10, 15, 25, 0.75);
+  text-align: center;
+  padding: 100px 20px;
+  color: #ffffff;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+
+
+.hero-overlay p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dddddd;
+}
