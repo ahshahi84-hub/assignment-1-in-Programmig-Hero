@@ -187,13 +187,15 @@ img {
   padding: 80px 20px;
   background-color: #f9f9f9;
 }
+
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:20px;
+  gap: 20px;
   max-width: 950px;
   margin: 0 auto;
 }
+
 .price-card {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
@@ -201,18 +203,22 @@ img {
   padding: 30px;
   text-align: left;
 }
+
 .price-card.featured {
   background-color: #0f1b33;
   color: #ffffff;
 }
+
 .plan-name {
   font-size: 12px;
   text-transform: uppercase;
   color: #888888;
 }
+
 .price-card.featured .plan-name {
   color: #9db4ff;
 }
+
 .price {
   font-size: 34px;
   margin: 8px 0 2px 0;
@@ -245,4 +251,65 @@ img {
 .price-card .btn {
   width: 100%;
   text-align: center;
+}
+
+
+
+.footer {
+  background: #ffffff;
+  padding: 40px 50px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 180px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #555;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #2f5fff;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #dddddd;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
 }
